@@ -274,9 +274,4 @@ public class PostController {
 
         return "posts/list";
     }
-
-    @GetMapping("/error")
-    public String greet(){
-        return "Welcome to mountblue";
-    }
 }
