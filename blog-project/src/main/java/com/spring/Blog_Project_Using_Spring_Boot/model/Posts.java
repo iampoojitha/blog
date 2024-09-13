@@ -61,11 +61,7 @@ public class Posts {
     )
     private Set<Tag> tags = new HashSet<>();
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", nullable = false)
-    private Users user;
-
-    public Posts(Integer id, String title, String excerpt, String author, String publishedAt, Boolean isPublished, LocalDateTime createdAt, LocalDateTime updatedAt, List<Comment> comments, Set<Tag> tags, String content, Users user) {
+    public Posts(Integer id, String title, String excerpt, String author, String publishedAt, Boolean isPublished, LocalDateTime createdAt, LocalDateTime updatedAt, List<Comment> comments, Set<Tag> tags, String content) {
         this.id = id;
         this.title = title;
         this.excerpt = excerpt;
@@ -97,16 +93,7 @@ public class Posts {
                 ", updatedAt=" + updatedAt +
                 ", comments=" + comments +
                 ", tags=" + tags +
-                ", user=" + user +
                 '}';
-    }
-
-    public Users getUser() {
-        return user;
-    }
-
-    public void setUser(Users user) {
-        this.user = user;
     }
 
     public String getContent() {
