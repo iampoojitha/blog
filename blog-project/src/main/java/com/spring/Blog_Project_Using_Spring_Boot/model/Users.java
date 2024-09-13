@@ -31,22 +31,14 @@ public class Users {
     @Column(name = "role", nullable = false)
     private String role;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Posts> posts;
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Comment> comments;
-
     public Users() {
     }
 
-    public Users(String name, String email, String password, String role, List<Posts> posts, List<Comment> comments) {
+    public Users(String name, String email, String password, String role) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.role = role;
-        this.posts = posts;
-        this.comments = comments;
     }
 
     public Integer getId() {
@@ -87,21 +79,5 @@ public class Users {
 
     public void setRole(String role) {
         this.role = role;
-    }
-
-    public List<Posts> getPosts() {
-        return posts;
-    }
-
-    public void setPosts(List<Posts> posts) {
-        this.posts = posts;
-    }
-
-    public List<Comment> getComments() {
-        return comments;
-    }
-
-    public void setComments(List<Comment> comments) {
-        this.comments = comments;
     }
 }
