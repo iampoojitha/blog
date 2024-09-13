@@ -73,7 +73,6 @@ public class Posts {
         this.comments = comments;
         this.tags = tags;
         this.content = content;
-        this.user = user;
     }
 
     public Posts() {
