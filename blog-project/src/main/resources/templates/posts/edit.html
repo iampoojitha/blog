@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Edit Post</title>
+  <style>
+    form {
+ width:60%;
+ background-color: #f0f0f0;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"], textarea {
+ width: 70%;
+ padding: 10px;
+ margin-bottom: 20px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+.btn{
+ background-color: #4CAF50;
+ color: #fff;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.btn:hover {
+ background-color: #3e8e41;
+}
+a {
+ text-decoration: none;
+ color: white;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+<h1>Edit Post</h1>
+<form th:action="@{/posts/edit/{id}(id=${post.id})}" th:object="${post}" method="post">
+
+  <input type="hidden" name="postId" th:value="${post.id}" />
+  <label for="title">Title:</label>
+  <input type="text" id="title" th:field="*{title}" /><br/>
+
+  <label for="excerpt">Excerpt:</label>
+  <textarea id="excerpt" th:field="*{excerpt}"></textarea><br/>
+
+  <label for="content">Content:</label>
+  <textarea id="content" th:field="*{content}" cols="50" rows="10"></textarea><br/>
+
+  <label for="author">Author:</label>
+  <input type="text" id="author" th:field="*{author}" /><br/>
+
+  <label for="tagNames">Tags (comma-separated):</label>
+  <input type="text" id="tagNames" name="tagNames" th:value="${tagsString}"/><br/>
+
+  <label for="published">Published:</label>
+  <input type="checkbox" id="published" th:field="*{published}"
+         th:attr="disabled=${post.published != null}" /><br/>
+
+
+  <button class="btn" type="submit">Update</button>
+</form>
+<a th:href="@{/posts}">Back to List</a>
+</body>
+</html>

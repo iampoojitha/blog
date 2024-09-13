@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6" lang="en">
+<head>
+  <title>Posts</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1.posts {
+  color: #333;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+button.create-button, button.view-button, button.edit-button, button.search-button, button.apply-button, a.show-button,.register,.login,.logout {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+button.create-button a, button.view-button a, button.edit-button a {
+  color: white;
+  text-decoration: none;
+}
+
+button.create-button:hover, button.view-button:hover, button.edit-button:hover, button.search-button:hover, button.apply-button:hover, a.show-button:hover {
+  background-color: #45a049;
+}
+
+button.create-button{
+margin-top:50px;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 60%;
+  font-size: 16px;
+}
+
+.post-container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-detail {
+  margin-bottom: 10px;
+}
+
+.post-detail .label {
+  font-weight: bold;
+}
+
+.post-actions {
+  text-align: right;
+}
+
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.pagination a {
+  color: #4CAF50;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  width: 200px;
+}
+
+.dropdown-content div {
+  margin-bottom: 10px;
+}
+
+.dropdown-content strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dropdown-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#sortForm {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#sortSelect {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+    .register, .login, .logout {
+  float: right; /* Add this */
+  margin-left: 20px; /* Add some margin to create space between forms */
+}
+    input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+<!--    padding: 10px; /* Add some padding */-->
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px;
+    cursor: pointer; /* Pointer/hand icon on hover */
+    border-radius: 4px; /* Rounded corners */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+  </style>
+</head>
+<body>
+
+<h1 class="posts">Blog Posts</h1>
+<h1>Welcome, <span th:text="${username}">User</span>!</h1>
+<div sec:authorize="hasAuthority('author') or hasAuthority('ADMIN')">
+  <button class="create-button">
+    <a th:href="@{/posts/create}">Create New Post</a>
+  </button>
+</div>
+
+<br>
+<!--<div sec:authorize="!isAuthenticated()">-->
+<!--  <form class="register" th:action="@{/createUser}" method="get">-->
+<!--    <input type="submit" value="SignUp">-->
+<!--  </form>-->
+<!--</div>-->
+<div sec:authorize="isAuthenticated()">
+  <form class="logout" th:action="@{/logout}" method="post">
+    <input type="submit" value="Logout">
+  </form>
+</div>
+
+<div sec:authorize="!isAuthenticated()">
+  <form class="login" th:action="@{/showLoginPage}" method="get">
+    <input type="submit" value="Sign In">
+  </form>
+</div>
+
+<div class="search-container">
+  <form th:action="@{/posts/search}" method="get">
+    <label>
+      <input type="text" name="keyword" placeholder="Search here">
+    </label>
+    <button class="search-button" type="submit">Search</button>
+  </form>
+</div>
+
+<br>
+
+<form th:action="@{/posts/filter}" method="get">
+  <div class="dropdown">
+    <button class="edit-button" type="button" id="filterButton">Filter</button>
+    <div class="dropdown-content" id="dropdownContent" style="display:none;">
+      <div>
+        <strong>Authors</strong>
+        <div th:each="author : ${authors}">
+          <label>
+            <input type="checkbox" name="authors" th:value="${author}" />
+            <span th:text="${author}"></span>
+          </label>
+        </div>
+      </div>
+      <div>
+        <strong>Tags</strong>
+        <div th:each="tag : ${tags}">
+          <label>
+            <input type="checkbox" name="tags" th:value="${tag}" />
+            <span th:text="${tag}"></span>
+          </label>
+        </div>
+      </div>
+      <div>
+        <strong>Published Date</strong>
+        <div th:each="date : ${publishedDates}">
+          <label>
+            <input type="checkbox" name="dates" th:value="${date}" />
+            <span th:if="${date != null and !date.isEmpty()}"
+                  th:text="${#strings.substring(date, 0, 10)}"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="apply-button" type="submit">Apply Filters</button>
+</form>
+
+<br>
+
+<button class="view-button"><a th:href="@{/posts}">View All Posts</a></button>
+<br>
+<form th:action="@{/posts/sort}" method="get" id="sortForm">
+  <label for="sortSelect">Sort by:</label>
+  <select name="sort" id="sortSelect" onchange="document.getElementById('sortForm').submit()">
+    <option value="">Select...</option>
+    <option value="asc" th:selected="${sort == 'asc'}">Ascending</option>
+    <option value="desc" th:selected="${sort == 'desc'}">Descending</option>
+  </select>
+</form>
+
+<div th:each="post, iterStat : ${posts}" class="post-container">
+  <h2 th:text="${iterStat.index + 1} + '. ' + ${post.title}"></h2>
+
+  <div class="post-detail">
+    <span class="label">Excerpt:</span>
+    <span class="content" th:text="${post.excerpt}"></span>
+  </div>
+
+  <div class="post-detail">
+    <span class="label">Author:</span>
+    <span class="content" th:text="${post.author}"></span>
+  </div>
+
+  <div class="post-detail">
+    <span class="label">Tags:</span>
+    <ul>
+      <li th:each="tag : ${post.tags}" th:text="${tag.name}"></li>
+    </ul>
+  </div>
+
+  <div class="post-detail">
+    <span class="label">Published At:</span>
+    <span class="content" th:text="${post.publishedAt}"></span>
+  </div>
+
+  <div class="post-detail">
+    <span class="label">Updated At:</span>
+    <span class="content" th:text="${post.updatedAt}"></span>
+  </div>
+
+  <div class="post-actions">
+    <a th:href="@{/posts/view/{id}(id=${post.id})}" class="show-button">View</a>
+  </div>
+</div>
+
+<div class="pagination">
+  <ul>
+    <li th:if="${currentPage > 0}">
+      <a class="view-button" th:href="@{/posts(page=${currentPage - 1}, size=${pageSize})}">Previous</a>
+    </li>
+
+    <li th:if="${totalPages != null && currentPage < totalPages - 1}">
+      <a class="view-button" th:href="@{/posts(page=${currentPage + 1}, size=${pageSize})}">Next</a>
+    </li>
+  </ul>
+</div>
+
+<script>
+  document.getElementById('filterButton').addEventListener('click', function(event) {
+      event.stopPropagation();
+      var dropdownContent = document.getElementById('dropdownContent');
+      if (dropdownContent.style.display === 'block') {
+          dropdownContent.style.display = 'none';
+      } else {
+          dropdownContent.style.display = 'block';
+      }
+  });
+
+  window.addEventListener('click', function(event) {
+      var dropdownContent = document.getElementById('dropdownContent');
+      var filterButton = document.getElementById('filterButton');
+      if (!dropdownContent.contains(event.target) && event.target !== filterButton) {
+          dropdownContent.style.display = 'none';
+      }
+  });
+
+  document.getElementById('dropdownContent').addEventListener('click', function(event) {
+      event.stopPropagation();
+  });
+</script>
+</body>
+</html>
+

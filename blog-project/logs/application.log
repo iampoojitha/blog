@@ -1,0 +1,630 @@
+2024-09-13T06:59:06.115+05:30  INFO 4660 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T06:59:06.288+05:30  INFO 4660 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T06:59:06.859+05:30 DEBUG 4660 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T06:59:14.915+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /posts
+2024-09-13T06:59:14.924+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /posts
+2024-09-13T06:59:14.949+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T06:59:16.246+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T06:59:16.247+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T06:59:16.255+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T06:59:16.284+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T06:59:16.285+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T06:59:16.361+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T06:59:23.847+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /posts/view/41
+2024-09-13T06:59:23.848+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /posts/view/41
+2024-09-13T06:59:23.919+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T06:59:33.702+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /posts
+2024-09-13T06:59:33.703+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /posts
+2024-09-13T06:59:33.706+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T06:59:39.346+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /posts/view/22
+2024-09-13T06:59:39.348+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /posts/view/22
+2024-09-13T06:59:39.362+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T06:59:43.813+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /posts
+2024-09-13T06:59:43.814+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /posts
+2024-09-13T06:59:43.815+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:02:25.225+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /posts/filter?authors=pooja&dates=2024-09-02
+2024-09-13T07:02:25.238+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /posts/filter?authors=pooja&dates=2024-09-02
+2024-09-13T07:02:25.247+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:02:38.155+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /posts/filter?authors=pooja&tags=second&dates=2024-09-03
+2024-09-13T07:02:38.156+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /posts/filter?authors=pooja&tags=second&dates=2024-09-03
+2024-09-13T07:02:38.161+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:02:43.739+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /posts/filter?authors=pooja
+2024-09-13T07:02:43.741+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /posts/filter?authors=pooja
+2024-09-13T07:02:43.745+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:02:49.747+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /posts/filter?tags=second
+2024-09-13T07:02:49.748+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /posts/filter?tags=second
+2024-09-13T07:02:49.749+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:03:10.600+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /posts/filter?authors=pooja&tags=second&dates=2024-09-04
+2024-09-13T07:03:10.601+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /posts/filter?authors=pooja&tags=second&dates=2024-09-04
+2024-09-13T07:03:10.603+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:04:14.810+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /posts/sort?sort=asc
+2024-09-13T07:04:14.811+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /posts/sort?sort=asc
+2024-09-13T07:04:14.817+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:04:20.699+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /posts?page=1&size=
+2024-09-13T07:04:20.701+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /posts?page=1&size=
+2024-09-13T07:04:20.704+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:04:20.777+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:04:20.778+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:04:20.799+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:04:20.800+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:04:20.800+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:04:20.805+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:04:32.269+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /posts/search?keyword=ghjk
+2024-09-13T07:04:32.271+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /posts/search?keyword=ghjk
+2024-09-13T07:04:32.275+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:06:05.875+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /posts/sort?sort=asc
+2024-09-13T07:06:05.876+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /posts/sort?sort=asc
+2024-09-13T07:06:05.878+05:30 DEBUG 4660 --- [SpringBlogProject] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:09:29.096+05:30  INFO 5547 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T07:09:29.135+05:30  INFO 5547 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T07:09:29.359+05:30 DEBUG 5547 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T07:09:36.987+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /posts
+2024-09-13T07:09:36.995+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /posts
+2024-09-13T07:09:37.016+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:10:19.022+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /posts/sort?sort=asc
+2024-09-13T07:10:19.033+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /posts/sort?sort=asc
+2024-09-13T07:10:19.042+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:10:28.001+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /posts/search?keyword=fg
+2024-09-13T07:10:28.002+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /posts/search?keyword=fg
+2024-09-13T07:10:28.007+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:10:28.112+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:10:28.112+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:10:28.118+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:10:28.124+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:10:28.124+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:10:28.188+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:11:18.582+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /posts/sort?sort=desc
+2024-09-13T07:11:18.583+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /posts/sort?sort=desc
+2024-09-13T07:11:18.585+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:11:27.928+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /posts?page=1&size=
+2024-09-13T07:11:27.929+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /posts?page=1&size=
+2024-09-13T07:11:27.931+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:11:35.038+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /posts/search?keyword=ghjk
+2024-09-13T07:11:35.039+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /posts/search?keyword=ghjk
+2024-09-13T07:11:35.041+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:11:41.051+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /posts/filter?dates=2024-09-03
+2024-09-13T07:11:41.052+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /posts/filter?dates=2024-09-03
+2024-09-13T07:11:41.058+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:11:59.679+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /posts/sort?sort=asc
+2024-09-13T07:11:59.680+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /posts/sort?sort=asc
+2024-09-13T07:11:59.682+05:30 DEBUG 5547 --- [SpringBlogProject] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:12:42.138+05:30  INFO 5774 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T07:12:42.181+05:30  INFO 5774 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T07:12:42.438+05:30 DEBUG 5774 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T07:12:44.266+05:30 DEBUG 5774 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /posts
+2024-09-13T07:12:44.274+05:30 DEBUG 5774 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /posts
+2024-09-13T07:12:44.299+05:30 DEBUG 5774 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:17:01.176+05:30  INFO 6074 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T07:17:01.217+05:30  INFO 6074 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T07:17:01.514+05:30 DEBUG 6074 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T07:17:02.760+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /posts
+2024-09-13T07:17:02.773+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /posts
+2024-09-13T07:17:02.809+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:17:03.334+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:17:03.334+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:17:03.341+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:17:03.346+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:17:03.347+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:17:03.406+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:17:28.397+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /posts/filter?dates=2024-09-03
+2024-09-13T07:17:28.407+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /posts/filter?dates=2024-09-03
+2024-09-13T07:17:28.414+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:17:28.513+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:17:28.514+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:17:28.517+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:17:28.518+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:17:28.519+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:17:28.522+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:18:07.053+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /showLoginPage?
+2024-09-13T07:18:07.054+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /showLoginPage?
+2024-09-13T07:18:07.352+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:18:07.407+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:18:07.407+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:18:07.409+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:18:07.410+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:18:07.411+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:18:07.414+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:18:11.569+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T07:18:11.570+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T07:18:11.719+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:18:11.764+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:18:11.765+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:18:11.767+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:18:11.768+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:18:11.768+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:18:11.773+05:30 DEBUG 6074 --- [SpringBlogProject] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:20:59.536+05:30  INFO 6327 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T07:20:59.580+05:30  INFO 6327 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T07:20:59.817+05:30 DEBUG 6327 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T07:21:41.576+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /posts
+2024-09-13T07:21:41.582+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /posts
+2024-09-13T07:21:41.604+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:21:42.070+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:21:42.070+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:21:42.078+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:21:42.157+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:21:42.158+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:21:42.214+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:21:46.724+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T07:21:46.725+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T07:21:46.760+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:21:46.800+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:21:46.801+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:21:46.803+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:21:46.804+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:21:46.804+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:21:46.808+05:30 DEBUG 6327 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:26:20.331+05:30  INFO 6721 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T07:26:20.372+05:30  INFO 6721 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T07:26:20.619+05:30 DEBUG 6721 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T07:27:03.428+05:30 DEBUG 6721 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /posts
+2024-09-13T07:27:03.435+05:30 DEBUG 6721 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /posts
+2024-09-13T07:27:03.457+05:30 DEBUG 6721 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:27:03.956+05:30 DEBUG 6721 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:27:03.958+05:30 DEBUG 6721 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:27:03.971+05:30 DEBUG 6721 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:27:03.979+05:30 DEBUG 6721 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:27:03.980+05:30 DEBUG 6721 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:27:04.037+05:30 DEBUG 6721 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:27:33.630+05:30  INFO 6869 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T07:27:33.667+05:30  INFO 6869 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T07:27:33.901+05:30 DEBUG 6869 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T07:27:36.207+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /posts
+2024-09-13T07:27:36.213+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /posts
+2024-09-13T07:27:36.238+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:27:36.740+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:27:36.740+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:27:36.752+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:27:36.759+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:27:36.759+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:27:36.814+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:27:42.358+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /showLoginPage?
+2024-09-13T07:27:42.361+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /showLoginPage?
+2024-09-13T07:27:42.381+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:27:45.132+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T07:27:45.133+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T07:27:45.168+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:27:45.206+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:27:45.207+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:27:45.210+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:27:45.212+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:27:45.212+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:27:45.216+05:30 DEBUG 6869 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:31:41.846+05:30  INFO 7160 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T07:31:41.885+05:30  INFO 7160 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T07:31:42.127+05:30 DEBUG 7160 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T07:31:44.206+05:30 DEBUG 7160 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T07:31:44.212+05:30 DEBUG 7160 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T07:31:44.500+05:30 DEBUG 7160 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:31:44.523+05:30 DEBUG 7160 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T07:31:44.524+05:30 DEBUG 7160 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T07:31:44.529+05:30 DEBUG 7160 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:31:44.535+05:30 DEBUG 7160 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T07:31:44.535+05:30 DEBUG 7160 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T07:31:44.597+05:30 DEBUG 7160 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T07:32:02.807+05:30  INFO 7293 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T07:32:02.850+05:30  INFO 7293 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T07:32:03.137+05:30 DEBUG 7293 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T07:32:03.615+05:30 DEBUG 7293 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T07:32:03.623+05:30 DEBUG 7293 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T07:32:03.900+05:30 DEBUG 7293 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:09:49.423+05:30  INFO 7895 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:09:49.463+05:30  INFO 7895 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:09:49.690+05:30 DEBUG 7895 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:09:50.340+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:09:50.350+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:09:50.637+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:09:50.676+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:09:50.677+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:09:50.688+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:09:50.694+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:09:50.695+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:09:50.782+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:09:51.976+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:09:51.976+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:09:51.991+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:09:53.060+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:09:53.062+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:09:53.077+05:30 DEBUG 7895 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:10:52.317+05:30  INFO 8074 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:10:52.359+05:30  INFO 8074 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:10:52.609+05:30 DEBUG 8074 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:10:53.125+05:30 DEBUG 8074 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:10:53.133+05:30 DEBUG 8074 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:10:53.405+05:30 DEBUG 8074 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:10:53.438+05:30 DEBUG 8074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:10:53.439+05:30 DEBUG 8074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:10:53.449+05:30 DEBUG 8074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:10:53.456+05:30 DEBUG 8074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:10:53.457+05:30 DEBUG 8074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:10:53.530+05:30 DEBUG 8074 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:11:10.321+05:30  INFO 8186 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:11:10.358+05:30  INFO 8186 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:11:10.605+05:30 DEBUG 8186 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:11:11.150+05:30 DEBUG 8186 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:11:11.158+05:30 DEBUG 8186 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:11:11.443+05:30 DEBUG 8186 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:12:19.669+05:30  INFO 8321 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:12:19.715+05:30  INFO 8321 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:12:19.940+05:30 DEBUG 8321 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:12:20.876+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:12:20.885+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:12:21.182+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:12:21.206+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:12:21.207+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:12:21.214+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:12:21.220+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:12:21.221+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:12:21.280+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:12:51.468+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:12:51.469+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:12:51.486+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:12:51.520+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:12:51.521+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:12:51.527+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:12:51.530+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:12:51.530+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:12:51.538+05:30 DEBUG 8321 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:13:01.725+05:30  INFO 8470 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:13:01.760+05:30  INFO 8470 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:13:01.963+05:30 DEBUG 8470 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:13:02.343+05:30 DEBUG 8470 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:13:02.350+05:30 DEBUG 8470 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:13:02.621+05:30 DEBUG 8470 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:13:02.646+05:30 DEBUG 8470 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:13:02.647+05:30 DEBUG 8470 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:13:02.658+05:30 DEBUG 8470 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:13:02.663+05:30 DEBUG 8470 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:13:02.663+05:30 DEBUG 8470 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:13:02.713+05:30 DEBUG 8470 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:13:18.041+05:30  INFO 8591 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:13:18.085+05:30  INFO 8591 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:13:18.352+05:30 DEBUG 8591 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:13:18.851+05:30 DEBUG 8591 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:13:18.860+05:30 DEBUG 8591 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:13:19.115+05:30 DEBUG 8591 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:14:35.157+05:30  INFO 8725 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:14:35.198+05:30  INFO 8725 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:14:35.492+05:30 DEBUG 8725 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:14:35.960+05:30 DEBUG 8725 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:14:35.970+05:30 DEBUG 8725 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:14:36.241+05:30 DEBUG 8725 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:14:36.266+05:30 DEBUG 8725 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:14:36.267+05:30 DEBUG 8725 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:14:36.275+05:30 DEBUG 8725 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:14:36.285+05:30 DEBUG 8725 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:14:36.285+05:30 DEBUG 8725 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:14:36.351+05:30 DEBUG 8725 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:15:43.111+05:30  INFO 8917 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:15:43.180+05:30  INFO 8917 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:15:43.507+05:30 DEBUG 8917 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:15:44.140+05:30 DEBUG 8917 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:15:44.149+05:30 DEBUG 8917 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:15:44.456+05:30 DEBUG 8917 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:15:44.494+05:30 DEBUG 8917 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:15:44.495+05:30 DEBUG 8917 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:15:44.505+05:30 DEBUG 8917 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:15:44.511+05:30 DEBUG 8917 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:15:44.513+05:30 DEBUG 8917 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:15:44.580+05:30 DEBUG 8917 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:16:09.981+05:30  INFO 9052 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:16:10.020+05:30  INFO 9052 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:16:10.270+05:30 DEBUG 9052 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:16:10.625+05:30 DEBUG 9052 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:16:10.633+05:30 DEBUG 9052 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:16:10.977+05:30 DEBUG 9052 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:16:35.608+05:30  INFO 9178 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:16:35.649+05:30  INFO 9178 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:16:35.878+05:30 DEBUG 9178 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:16:36.796+05:30 DEBUG 9178 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:16:36.805+05:30 DEBUG 9178 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:16:37.090+05:30 DEBUG 9178 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:19:32.836+05:30  INFO 9461 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:19:32.877+05:30  INFO 9461 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:19:33.150+05:30 DEBUG 9461 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:19:33.801+05:30 DEBUG 9461 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:19:33.811+05:30 DEBUG 9461 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:19:34.089+05:30 DEBUG 9461 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:19:34.110+05:30 DEBUG 9461 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:19:34.111+05:30 DEBUG 9461 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:19:34.118+05:30 DEBUG 9461 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:19:34.123+05:30 DEBUG 9461 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:19:34.123+05:30 DEBUG 9461 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:19:34.185+05:30 DEBUG 9461 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:19:54.409+05:30  INFO 9594 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:19:54.465+05:30  INFO 9594 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:19:54.731+05:30 DEBUG 9594 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:19:55.620+05:30 DEBUG 9594 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:19:55.626+05:30 DEBUG 9594 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:19:55.932+05:30 DEBUG 9594 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:22:54.826+05:30  INFO 9806 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:22:54.863+05:30  INFO 9806 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:22:55.107+05:30 DEBUG 9806 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:22:57.419+05:30 DEBUG 9806 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:22:57.426+05:30 DEBUG 9806 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:22:57.700+05:30 DEBUG 9806 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:22:57.730+05:30 DEBUG 9806 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:22:57.730+05:30 DEBUG 9806 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:22:57.830+05:30 DEBUG 9806 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:22:57.851+05:30 DEBUG 9806 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:22:57.851+05:30 DEBUG 9806 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:22:57.973+05:30 DEBUG 9806 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:26:02.277+05:30  INFO 10028 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:26:02.330+05:30  INFO 10028 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:26:02.636+05:30 DEBUG 10028 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:26:04.364+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /createUser?
+2024-09-13T08:26:04.371+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /createUser?
+2024-09-13T08:26:04.680+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:26:04.705+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:26:04.706+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:26:04.713+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:26:04.720+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:26:04.720+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:26:04.776+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:26:26.392+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /authenticateTheUser
+2024-09-13T08:26:26.597+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2024-09-13T08:26:26.598+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select name,password,1 as enabled from users where name=?]
+2024-09-13T08:26:26.603+05:30 TRACE 10028 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [], value class [java.lang.String], SQL type unknown
+2024-09-13T08:26:26.617+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.p.JdbcUserDetailsManager           : Query returned no results for user ''
+2024-09-13T08:26:26.705+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user ''
+2024-09-13T08:26:26.709+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /showLoginPage?error
+2024-09-13T08:26:26.713+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /showLoginPage?error
+2024-09-13T08:26:26.723+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /showLoginPage?error
+2024-09-13T08:26:26.748+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:26:26.783+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:26:26.784+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:26:26.787+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:26:26.788+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:26:26.788+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:26:26.793+05:30 DEBUG 10028 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:28:11.837+05:30  INFO 10224 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:28:11.881+05:30  INFO 10224 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:28:12.135+05:30 DEBUG 10224 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:28:14.029+05:30 DEBUG 10224 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /showLoginPage?error
+2024-09-13T08:28:14.041+05:30 DEBUG 10224 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /showLoginPage?error
+2024-09-13T08:28:14.307+05:30 DEBUG 10224 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:28:14.342+05:30 DEBUG 10224 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:28:14.344+05:30 DEBUG 10224 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:28:14.352+05:30 DEBUG 10224 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:28:14.359+05:30 DEBUG 10224 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:28:14.359+05:30 DEBUG 10224 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:28:14.413+05:30 DEBUG 10224 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:29:23.349+05:30  INFO 10366 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T08:29:23.387+05:30  INFO 10366 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T08:29:23.659+05:30 DEBUG 10366 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T08:29:24.236+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /showLoginPage?error
+2024-09-13T08:29:24.247+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /showLoginPage?error
+2024-09-13T08:29:24.500+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:29:24.534+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:29:24.535+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:29:24.542+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:29:24.549+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:29:24.550+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:29:24.609+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T08:29:56.716+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /authenticateTheUser
+2024-09-13T08:29:56.859+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2024-09-13T08:29:56.860+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select name,password,1 as enabled from users where name=?]
+2024-09-13T08:29:56.865+05:30 TRACE 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [Pooja], value class [java.lang.String], SQL type unknown
+2024-09-13T08:29:56.879+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2024-09-13T08:29:56.879+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select name,role from users where name=?]
+2024-09-13T08:29:56.879+05:30 TRACE 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [Pooja], value class [java.lang.String], SQL type unknown
+2024-09-13T08:29:56.969+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-09-13T08:29:56.998+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from 8B0F39FFC3318F41ECE9C66467B0FB67
+2024-09-13T08:29:56.999+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.w.csrf.CsrfAuthenticationStrategy  : Replaced CSRF Token
+2024-09-13T08:29:57.001+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Pooja, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=8B0F39FFC3318F41ECE9C66467B0FB67], Granted Authorities=[ADMIN]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@1c67bb1a]
+2024-09-13T08:29:57.001+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Pooja, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=8B0F39FFC3318F41ECE9C66467B0FB67], Granted Authorities=[ADMIN]]
+2024-09-13T08:29:57.002+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /posts
+2024-09-13T08:29:57.007+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /posts
+2024-09-13T08:29:57.008+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /posts
+2024-09-13T08:29:57.021+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Pooja, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=8B0F39FFC3318F41ECE9C66467B0FB67], Granted Authorities=[ADMIN]]]
+2024-09-13T08:29:57.452+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-09-13T08:29:57.452+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-09-13T08:29:57.454+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Pooja, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=8B0F39FFC3318F41ECE9C66467B0FB67], Granted Authorities=[ADMIN]]]
+2024-09-13T08:29:57.455+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-09-13T08:29:57.455+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-09-13T08:29:57.459+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Pooja, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=8B0F39FFC3318F41ECE9C66467B0FB67], Granted Authorities=[ADMIN]]]
+2024-09-13T08:30:02.019+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /logout
+2024-09-13T08:30:02.020+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Pooja, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=8B0F39FFC3318F41ECE9C66467B0FB67], Granted Authorities=[ADMIN]]]
+2024-09-13T08:30:02.020+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.s.w.a.logout.LogoutFilter            : Logging out [UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Pooja, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=8B0F39FFC3318F41ECE9C66467B0FB67], Granted Authorities=[ADMIN]]]
+2024-09-13T08:30:02.021+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.s.w.a.l.SecurityContextLogoutHandler : Invalidated session 2C8954379F6BBD5580F8B5EE918976BD
+2024-09-13T08:30:02.022+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-6] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /showLoginPage?logout
+2024-09-13T08:30:02.033+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /showLoginPage?logout
+2024-09-13T08:30:02.033+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /showLoginPage?logout
+2024-09-13T08:30:02.042+05:30 DEBUG 10366 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-09-13T10:20:46.253+05:30  INFO 9051 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T10:20:46.436+05:30  INFO 9051 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T10:20:46.853+05:30 DEBUG 9051 --- [SpringBlogProject] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-09-13T10:21:38.602+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Starting BlogProjectUsingSpringBootApplication using Java 22.0.2 with PID 9332 (/home/m-poojitha/blog-project/target/classes started by m-poojitha in /home/m-poojitha/blog-project)
+2024-09-13T10:21:38.660+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : The following 1 profile is active: "dev"
+2024-09-13T10:21:38.698+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-13T10:21:38.699+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-13T10:21:39.201+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T10:21:39.247+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 4 JPA repository interfaces.
+2024-09-13T10:21:39.722+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-13T10:21:39.733+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-13T10:21:39.733+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-13T10:21:39.762+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-13T10:21:39.762+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1063 ms
+2024-09-13T10:21:39.890+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T10:21:39.931+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T10:21:39.962+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T10:21:40.170+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T10:21:40.186+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-13T10:21:40.442+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e30661b
+2024-09-13T10:21:40.444+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-13T10:21:41.193+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T10:21:41.258+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T10:21:41.429+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T10:21:42.144+05:30  WARN 9332 --- [SpringBlogProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-13T10:21:42.161+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T10:21:42.164+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T10:21:42.590+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-13T10:21:42.615+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-13T10:21:42.623+05:30  INFO 9332 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Started BlogProjectUsingSpringBootApplication in 4.448 seconds (process running for 4.803)
+2024-09-13T10:22:00.119+05:30  INFO 9332 --- [SpringBlogProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T10:22:00.122+05:30  INFO 9332 --- [SpringBlogProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-13T10:22:00.128+05:30  INFO 9332 --- [SpringBlogProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-13T10:22:01.704+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Starting BlogProjectUsingSpringBootApplication using Java 22.0.2 with PID 9486 (/home/m-poojitha/blog-project/target/classes started by m-poojitha in /home/m-poojitha/blog-project)
+2024-09-13T10:22:01.758+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : The following 1 profile is active: "prod"
+2024-09-13T10:22:01.807+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-13T10:22:01.808+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-13T10:22:02.388+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T10:22:02.434+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 4 JPA repository interfaces.
+2024-09-13T10:22:02.856+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-13T10:22:02.867+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-13T10:22:02.868+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-13T10:22:02.893+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-13T10:22:02.894+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1086 ms
+2024-09-13T10:22:03.017+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T10:22:03.047+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T10:22:03.083+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T10:22:03.269+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T10:22:03.284+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-13T10:22:03.541+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52cd7e1
+2024-09-13T10:22:03.542+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-13T10:22:04.301+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T10:22:04.363+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T10:22:04.531+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T10:22:05.151+05:30  WARN 9486 --- [SpringBlogProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-13T10:22:05.169+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T10:22:05.172+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T10:22:05.625+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-13T10:22:05.652+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-13T10:22:05.660+05:30  INFO 9486 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Started BlogProjectUsingSpringBootApplication in 4.398 seconds (process running for 4.756)
+2024-09-13T10:34:18.540+05:30  INFO 9486 --- [SpringBlogProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T10:34:18.543+05:30  INFO 9486 --- [SpringBlogProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-13T10:34:18.551+05:30  INFO 9486 --- [SpringBlogProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-13T10:34:20.102+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Starting BlogProjectUsingSpringBootApplication using Java 22.0.2 with PID 10708 (/home/m-poojitha/blog-project/target/classes started by m-poojitha in /home/m-poojitha/blog-project)
+2024-09-13T10:34:20.158+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : The following 1 profile is active: "dev"
+2024-09-13T10:34:20.195+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-13T10:34:20.195+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-13T10:34:20.706+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T10:34:20.767+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
+2024-09-13T10:34:21.244+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-13T10:34:21.260+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-13T10:34:21.260+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-13T10:34:21.294+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-13T10:34:21.295+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1099 ms
+2024-09-13T10:34:21.421+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T10:34:21.454+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T10:34:21.487+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T10:34:21.687+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T10:34:21.701+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-13T10:34:21.925+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52ef9e8d
+2024-09-13T10:34:21.926+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-13T10:34:22.660+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T10:34:22.725+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T10:34:22.927+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T10:34:23.585+05:30  WARN 10708 --- [SpringBlogProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-13T10:34:23.605+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T10:34:23.608+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T10:34:23.983+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-13T10:34:24.015+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-13T10:34:24.030+05:30  INFO 10708 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Started BlogProjectUsingSpringBootApplication in 4.346 seconds (process running for 4.73)
+2024-09-13T11:32:03.241+05:30  INFO 10708 --- [SpringBlogProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T11:32:03.340+05:30  INFO 10708 --- [SpringBlogProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-13T11:32:03.399+05:30  INFO 10708 --- [SpringBlogProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-13T11:32:12.458+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Starting BlogProjectUsingSpringBootApplication using Java 22.0.2 with PID 16094 (/home/m-poojitha/blog-project/target/classes started by m-poojitha in /home/m-poojitha/blog-project)
+2024-09-13T11:32:12.604+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : The following 1 profile is active: "dev"
+2024-09-13T11:32:12.643+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-13T11:32:12.644+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-13T11:32:14.315+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T11:32:14.420+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 4 JPA repository interfaces.
+2024-09-13T11:32:15.104+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-13T11:32:15.137+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-13T11:32:15.137+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-13T11:32:15.222+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-13T11:32:15.223+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2579 ms
+2024-09-13T11:32:15.445+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T11:32:15.587+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T11:32:15.630+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T11:32:16.023+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T11:32:16.069+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-13T11:32:16.705+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5973976d
+2024-09-13T11:32:16.706+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-13T11:32:17.788+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T11:32:17.865+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T11:32:18.166+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T11:32:19.023+05:30  WARN 16094 --- [SpringBlogProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-13T11:32:19.070+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T11:32:19.073+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T11:32:19.645+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-13T11:32:19.679+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-13T11:32:19.687+05:30  INFO 16094 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Started BlogProjectUsingSpringBootApplication in 8.034 seconds (process running for 12.022)
+2024-09-13T11:32:31.585+05:30  INFO 16094 --- [SpringBlogProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-13T11:32:31.585+05:30  INFO 16094 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-13T11:32:31.586+05:30  INFO 16094 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-13T11:32:50.453+05:30 DEBUG 16094 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2024-09-13T11:32:50.454+05:30 DEBUG 16094 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select name,password,1 as enabled from users where name=?]
+2024-09-13T11:32:50.457+05:30 TRACE 16094 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [Pooja], value class [java.lang.String], SQL type unknown
+2024-09-13T11:32:50.481+05:30 DEBUG 16094 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2024-09-13T11:32:50.481+05:30 DEBUG 16094 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select name,role from users where name=?]
+2024-09-13T11:32:50.481+05:30 TRACE 16094 --- [SpringBlogProject] [http-nio-8080-exec-7] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [Pooja], value class [java.lang.String], SQL type unknown
+2024-09-13T12:21:55.580+05:30  INFO 16094 --- [SpringBlogProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T12:21:55.610+05:30  INFO 16094 --- [SpringBlogProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-13T12:21:55.619+05:30  INFO 16094 --- [SpringBlogProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-13T12:22:02.921+05:30  INFO 20796 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Starting BlogProjectUsingSpringBootApplication using Java 22.0.2 with PID 20796 (/home/m-poojitha/blog-project/target/classes started by m-poojitha in /home/m-poojitha/blog-project)
+2024-09-13T12:22:02.961+05:30  INFO 20796 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T12:22:03.002+05:30  INFO 20796 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-13T12:22:03.003+05:30  INFO 20796 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-13T12:22:03.246+05:30  WARN 20796 --- [SpringBlogProject] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.spring.Blog_Project_Using_Spring_Boot.BlogProjectUsingSpringBootApplication]
+2024-09-13T12:22:03.710+05:30 ERROR 20796 --- [SpringBlogProject] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.spring.Blog_Project_Using_Spring_Boot.BlogProjectUsingSpringBootApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:179) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:417) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.spring.Blog_Project_Using_Spring_Boot.BlogProjectUsingSpringBootApplication.main(BlogProjectUsingSpringBootApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'postController' for bean class [com.spring.Blog_Project_Using_Spring_Boot.restcontroller.PostController] conflicts with existing, non-compatible bean definition of same name and class [com.spring.Blog_Project_Using_Spring_Boot.controller.PostController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:306) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165) ~[spring-context-6.1.12.jar:6.1.12]
+	... 16 common frames omitted
+
+2024-09-13T12:23:43.551+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Starting BlogProjectUsingSpringBootApplication using Java 22.0.2 with PID 21025 (/home/m-poojitha/blog-project/target/classes started by m-poojitha in /home/m-poojitha/blog-project)
+2024-09-13T12:23:43.604+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T12:23:43.650+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-13T12:23:43.650+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-13T12:23:44.722+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T12:23:44.837+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 4 JPA repository interfaces.
+2024-09-13T12:23:45.575+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-13T12:23:45.599+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-13T12:23:45.599+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-13T12:23:45.677+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-13T12:23:45.678+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2027 ms
+2024-09-13T12:23:45.919+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T12:23:46.059+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T12:23:46.102+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T12:23:46.414+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T12:23:46.434+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-13T12:23:47.117+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@702bfc74
+2024-09-13T12:23:47.118+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-13T12:23:48.149+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T12:23:48.218+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T12:23:48.497+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T12:23:49.285+05:30  WARN 21025 --- [SpringBlogProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-13T12:23:49.389+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-09-13T12:23:49.393+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2024-09-13T12:23:49.915+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-13T12:23:49.954+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-13T12:23:49.962+05:30  INFO 21025 --- [SpringBlogProject] [restartedMain] .B.BlogProjectUsingSpringBootApplication : Started BlogProjectUsingSpringBootApplication in 6.84 seconds (process running for 7.264)
+2024-09-13T12:23:54.989+05:30  INFO 21025 --- [SpringBlogProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-13T12:23:54.990+05:30  INFO 21025 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-13T12:23:54.991+05:30  INFO 21025 --- [SpringBlogProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Post Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align:center;
+        }
+
+        .author {
+            font-style: italic;
+            color: #555;
+        }
+
+        .published-date {
+            font-size: 1em;
+            color: #888;
+            margin: 10px 0;
+        }
+
+        .content {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #333;
+        }
+         .edit-button {
+      padding: 8px 16px;
+      font-size: 16px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .edit-button:hover {
+      background-color: #0056b3;
+    }
+         .comments-section {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .comments-section h2 {
+        font-size: 2em;
+        color: #333;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .comment {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .comment p {
+        margin: 0;
+        padding: 5px 0;
+        color: #555;
+    }
+
+    .comment p:first-of-type {
+        font-weight: bold;
+    }
+
+    .comment p:nth-of-type(2) {
+        color: #888;
+    }
+
+    .comment p:nth-of-type(3) {
+        font-style: italic;
+    }
+
+    .comment p:last-of-type {
+        font-size: 0.9em;
+        color: #999;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${post.title}">Post Title</h1>
+    <p class="author">Author: <span th:text="${post.author}"></span></p>
+    <p th:text="${#temporals.format(post.createdAt, 'dd-MM-yyyy HH:mm')}">Published At</p>
+    <p class="content" th:text="${post.content}"></p>
+    <!--    <div th:if="${#authentication.principal.username == post.author}">-->
+    <div sec:authorize="hasAuthority('ADMIN') or (hasAuthority('author') and #authentication?.principal?.username?.toLowerCase() == #vars.post?.author?.toLowerCase())">
+        <button class="edit-button"><a th:href="@{/posts/edit/{id}(id=${post.id})}">Edit</a></button>
+        <form th:action="@{/posts/delete/{id}(id=${post.id})}" method="post" style="display:inline;">
+            <button class="edit-button"  type="submit">Delete</button>
+        </form>
+    </div>
+</div>
+<!--</div>-->
+<div class="comments-section">
+    <h2>Comments</h2>
+    <div th:each="comment : ${post.comments}">
+        <div class="comment">
+            <p th:text="${comment.name}">User Name</p>
+            <p th:text="${comment.email}">Email</p>
+            <p th:text="${comment.comment}">Comment content goes here...</p>
+            <p th:text="${#temporals.format(comment.createdAt, 'dd-MM-yyyy HH:mm')}">Created At</p>
+            <div sec:authorize="hasAuthority('author') and #authentication.principal.username.toLowerCase() == #vars.post.author.toLowerCase()">
+                <button class="edit-button">
+                    <a th:href="@{/comments/edit-comment/{id}(id=${comment.id})}">Edit comment</a>
+                </button>
+                <form th:action="@{/comments/delete-comment/{id}(id=${comment.id})}" method="post" style="display:inline;">
+                    <input type="hidden" name="postId" th:value="${post.id}" />
+                    <button class="edit-button" type="submit">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="edit-button">
+    <a th:href="@{/comments/{postId}/add-comment(postId=${post.id})}">Add Comment</a>
+</button>
+
+<button class="edit-button"><a th:href="@{/posts}">View All Posts</a></button>
+</body>
+</html>
